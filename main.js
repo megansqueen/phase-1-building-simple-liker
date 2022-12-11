@@ -4,8 +4,18 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const heartButton = document.querySelector(".like-glyph")
 
+heartButton.addEventListener("click", () => {
+  if (heartButton.classList.contains("activated-heart")) {
+    heartButton.classList.remove("activated-heart");
 
+  }
+  else {
+    heartButton.classList.add("activated-heart")
+    
+  }
+})
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
